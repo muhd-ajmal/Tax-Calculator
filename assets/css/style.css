@@ -1,0 +1,123 @@
+body {
+    background-image: url(https://img.freepik.com/premium-photo/top-view-office-table-desk-workspace-with-calculator-black-pen-laptop-blue_101276-159.jpg?w=1060);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: rgb(49, 125, 207);
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.content {
+    position: fixed;
+}
+
+.content h1 {
+    font-family: verdana;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(206, 206, 206) 4px 4px 6px;
+}
+
+.div-container{
+    position: fixed;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  button {
+    width: 250px;
+    background-color: #317dcf;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .amount{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    background-color: #5b80a7;
+  }
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
